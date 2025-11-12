@@ -1,0 +1,33 @@
+DEPLOYMENT WITH STREAMLIT LOCALLY
+
+Step 1: Save Your Trained Model
+
+-> Use joblib to save your trained pipeline
+-> The model will save as "model.pkl"
+
+Step 2: Create app.py for Streamlit
+
+-> This code is written as per the requirements of the app and model.
+
+Step 3: Run Locally
+
+-> Open Anaconda Prompt and change the directories where the 'app.py' and 'model.pkl' is created.
+-> To change C drive to D drive, type " D: " and enter.
+-> D:\Data Science\logistic_deploy>streamlit run app.py
+-> With the above command, the app will be opened in browser.
+
+
+DEPLOY ON STREAMLIT COMMUNITY CLOUD
+
+1. Login to GitHub account
+2. Create a new repository (e.g., titanic-logistic-streamlit)
+3. Upload your files (app.py, logistic_model.pkl, requirements.txt).
+4. Now, Go to 'https://streamlit.io/cloud' and sign in with your GitHub account.
+5. Click “New app”.
+    Select your repository.
+    Choose the branch (main or master).
+    In Main file path, type: app.py
+    Click Deploy.
+6. Once deployed successfully, Streamlit will give you a link.
+
+
